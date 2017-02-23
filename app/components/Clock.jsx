@@ -1,10 +1,6 @@
 var React = require('react');
 
 var Clock = React.createClass({
-  getDefaultProps: function() {
-    totalSeconds: 0
-  },
-
   propTypes: {
     totalSeconds: React.PropTypes.number
   },
@@ -28,4 +24,9 @@ var Clock = React.createClass({
     );
   }
 })
+
+Clock.defaultProps = {
+  totalSeconds: 0
+};
+
 module.exports = Clock;
