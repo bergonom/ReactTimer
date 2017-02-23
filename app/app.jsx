@@ -8,7 +8,6 @@ var Countdown = require('Countdown');
 // Load Foundation
 // @TODO: What do style! and css! do?
 // Partial answer: They are loaders
-require('style!css!foundation-sites/dist/css/foundation.min.css');
 $(document).foundation();
 
 require('style!css!sass!applicationStyles')

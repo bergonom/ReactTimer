@@ -8,7 +8,11 @@ module.exports = function(config) {
         timeout: '5000'
       }
     },
-    files: ['app/tests/**/*.test.jsx'],
+    files: [
+      'app/tests/**/*.test.jsx',
+      'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/foundation-sites/dist/js/foundation.min.js'
+    ],
     frameworks: ['mocha'],
     preprocessors: {
       'app/tests/**/*.test.jsx': ['webpack', 'sourcemap']
